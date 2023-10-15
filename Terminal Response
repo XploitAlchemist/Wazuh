@@ -1,0 +1,357 @@
+                                                                  
+┌──(root㉿kali)-[/home/kali]
+└─# apt-get install gnupg apt-transport-https
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+gnupg is already the newest version (2.2.40-1.1).
+apt-transport-https is already the newest version (2.7.3).
+The following packages were automatically installed and are no longer required:
+  debugedit gir1.2-gtksource-3.0 gir1.2-javascriptcoregtk-4.0
+  gir1.2-soup-2.4 gir1.2-webkit2-4.0 gobject-introspection
+  king-phisher libavfilter8 libavformat59 libblockdev-crypto2
+  libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2
+  libblockdev-part2 libblockdev-swap2 libblockdev-utils2
+  libblockdev2 libcodec2-1.0 libfsverity0 libgdal32 libgeos3.11.1
+  libgnuradio-analog3.10.5 libgnuradio-audio3.10.5
+  libgnuradio-blocks3.10.5 libgnuradio-channels3.10.5
+  libgnuradio-digital3.10.5 libgnuradio-dtv3.10.5
+  libgnuradio-fec3.10.5 libgnuradio-fft3.10.5
+  libgnuradio-filter3.10.5 libgnuradio-iio3.10.5
+  libgnuradio-network3.10.5 libgnuradio-pdu3.10.5
+  libgnuradio-pmt3.10.5 libgnuradio-qtgui3.10.5
+  libgnuradio-runtime3.10.5 libgnuradio-soapy3.10.5
+  libgnuradio-trellis3.10.5 libgnuradio-uhd3.10.5
+  libgnuradio-video-sdl3.10.5 libgnuradio-vocoder3.10.5
+  libgnuradio-wavelet3.10.5 libgnuradio-zeromq3.10.5
+  libgupnp-igd-1.0-4 libhttp-cookiejar-perl liblc3-0
+  libmongocrypt0 libmozilla-publicsuffix-perl libmujs2 libncurses5
+  libnfs13 libobjc-12-dev libplacebo208 libpostproc56 librpm9
+  librpmbuild9 librpmio9 librpmsign9 libsoup-gnome2.4-1
+  libspatialite7 libsuperlu5 libswscale6 libtinfo5 libuhd4.3.0
+  libvolk2.5 libwebsockets17 libyara9
+  linux-image-6.1.0-kali9-amd64 pipewire-alsa pwgen
+  python3-advancedhttpserver python3-boltons python3-cairo-dev
+  python3-cryptography37 python3-flask-security python3-geoip2
+  python3-geojson python3-graphene python3-graphene-sqlalchemy
+  python3-graphql-core python3-graphql-relay python3-icalendar
+  python3-jaraco.classes python3-maxminddb python3-promise
+  python3-pytz-deprecation-shim python3-requests-file
+  python3-rule-engine python3-rx python3-smoke-zephyr
+  python3-texttable tftp
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# apt-get update
+Hit:1 https://packages.wazuh.com/4.x/apt stable InRelease
+Hit:2 http://kali.cs.nycu.edu.tw/kali kali-rolling InRelease
+Reading package lists... Done
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# apt-get -y install wazuh-dashboard
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  debugedit gir1.2-gtksource-3.0 gir1.2-javascriptcoregtk-4.0
+  gir1.2-soup-2.4 gir1.2-webkit2-4.0 gobject-introspection
+  king-phisher libavfilter8 libavformat59 libblockdev-crypto2
+  libblockdev-fs2 libblockdev-loop2 libblockdev-part-err2
+  libblockdev-part2 libblockdev-swap2 libblockdev-utils2
+  libblockdev2 libcodec2-1.0 libfsverity0 libgdal32 libgeos3.11.1
+  libgnuradio-analog3.10.5 libgnuradio-audio3.10.5
+  libgnuradio-blocks3.10.5 libgnuradio-channels3.10.5
+  libgnuradio-digital3.10.5 libgnuradio-dtv3.10.5
+  libgnuradio-fec3.10.5 libgnuradio-fft3.10.5
+  libgnuradio-filter3.10.5 libgnuradio-iio3.10.5
+  libgnuradio-network3.10.5 libgnuradio-pdu3.10.5
+  libgnuradio-pmt3.10.5 libgnuradio-qtgui3.10.5
+  libgnuradio-runtime3.10.5 libgnuradio-soapy3.10.5
+  libgnuradio-trellis3.10.5 libgnuradio-uhd3.10.5
+  libgnuradio-video-sdl3.10.5 libgnuradio-vocoder3.10.5
+  libgnuradio-wavelet3.10.5 libgnuradio-zeromq3.10.5
+  libgupnp-igd-1.0-4 libhttp-cookiejar-perl liblc3-0
+  libmongocrypt0 libmozilla-publicsuffix-perl libmujs2 libncurses5
+  libnfs13 libobjc-12-dev libplacebo208 libpostproc56 librpm9
+  librpmbuild9 librpmio9 librpmsign9 libsoup-gnome2.4-1
+  libspatialite7 libsuperlu5 libswscale6 libtinfo5 libuhd4.3.0
+  libvolk2.5 libwebsockets17 libyara9
+  linux-image-6.1.0-kali9-amd64 pipewire-alsa pwgen
+  python3-advancedhttpserver python3-boltons python3-cairo-dev
+  python3-cryptography37 python3-flask-security python3-geoip2
+  python3-geojson python3-graphene python3-graphene-sqlalchemy
+  python3-graphql-core python3-graphql-relay python3-icalendar
+  python3-jaraco.classes python3-maxminddb python3-promise
+  python3-pytz-deprecation-shim python3-requests-file
+  python3-rule-engine python3-rx python3-smoke-zephyr
+  python3-texttable tftp
+Use 'sudo apt autoremove' to remove them.
+The following NEW packages will be installed:
+  wazuh-dashboard
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 128 MB of archives.
+After this operation, 813 MB of additional disk space will be used.
+Get:1 https://packages.wazuh.com/4.x/apt stable/main amd64 wazuh-dashboard amd64 4.5.1-1 [128 MB]
+Fetched 128 MB in 22s (5,831 kB/s)                                 
+Selecting previously unselected package wazuh-dashboard.
+(Reading database ... 487426 files and directories currently installed.)
+Preparing to unpack .../wazuh-dashboard_4.5.1-1_amd64.deb ...
+Creating wazuh-dashboard group... OK
+Creating wazuh-dashboard user... OK
+Unpacking wazuh-dashboard (4.5.1-1) ...
+Setting up wazuh-dashboard (4.5.1-1) ...
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# nano /etc/wazuh-dashboard/opensearch_dashboards.yml
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# NODE_NAME=dashboard   
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# mkdir /etc/wazuh-dashboard/certs
+tar -xf ./wazuh-certificates.tar -C /etc/wazuh-dashboard/certs/ ./$NODE_NAME.pem ./$NODE_NAME-key.pem ./root-ca.pem
+mv -n /etc/wazuh-dashboard/certs/$NODE_NAME.pem /etc/wazuh-dashboard/certs/dashboard.pem
+mv -n /etc/wazuh-dashboard/certs/$NODE_NAME-key.pem /etc/wazuh-dashboard/certs/dashboard-key.pem
+chmod 500 /etc/wazuh-dashboard/certs
+chmod 400 /etc/wazuh-dashboard/certs/*
+chown -R wazuh-dashboard:wazuh-dashboard /etc/wazuh-dashboard/certs
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# systemctl daemon-reload
+systemctl enable wazuh-dashboard
+systemctl start wazuh-dashboard
+Created symlink /etc/systemd/system/multi-user.target.wants/wazuh-dashboard.service → /etc/systemd/system/wazuh-dashboard.service.
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# systemctl status wazuh-dashboard.service 
+● wazuh-dashboard.service - wazuh-dashboard
+     Loaded: loaded (/etc/systemd/system/wazuh-dashboard.service; e>
+     Active: active (running) since Sun 2023-09-03 17:41:19 EDT; 1m>
+   Main PID: 93352 (node)
+      Tasks: 11 (limit: 2265)
+     Memory: 182.5M
+        CPU: 25.344s
+     CGroup: /system.slice/wazuh-dashboard.service
+             └─93352 /usr/share/wazuh-dashboard/bin/../node/bin/nod>
+
+Sep 03 17:41:41 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:42 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:42 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:43 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:43 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:43 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:45 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:46 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:46 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:46 kali opensearch-dashboards[93352]: {"type":"log","@>
+lines 1-20/20 (END)
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# nano /usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# systemctl status wazuh-dashboard.service                   
+● wazuh-dashboard.service - wazuh-dashboard
+     Loaded: loaded (/etc/systemd/system/wazuh-dashboard.service; e>
+     Active: active (running) since Sun 2023-09-03 17:41:19 EDT; 3m>
+   Main PID: 93352 (node)
+      Tasks: 11 (limit: 2265)
+     Memory: 145.3M
+        CPU: 27.770s
+     CGroup: /system.slice/wazuh-dashboard.service
+             └─93352 /usr/share/wazuh-dashboard/bin/../node/bin/nod>
+
+Sep 03 17:41:41 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:42 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:42 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:43 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:43 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:43 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:45 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:46 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:46 kali opensearch-dashboards[93352]: {"type":"log","@>
+Sep 03 17:41:46 kali opensearch-dashboards[93352]: {"type":"log","@>
+lines 1-20/20 (END)
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# systemctl status wazuh-manager.service                     
+● wazuh-manager.service - Wazuh manager
+     Loaded: loaded (/lib/systemd/system/wazuh-manager.service; ena>
+     Active: active (running) since Sun 2023-09-03 17:09:34 EDT; 42>
+      Tasks: 112 (limit: 2265)
+     Memory: 247.2M
+        CPU: 2min 21.691s
+     CGroup: /system.slice/wazuh-manager.service
+             ├─76335 /var/ossec/framework/python/bin/python3 /var/o>
+             ├─76384 /var/ossec/bin/wazuh-authd
+             ├─76408 /var/ossec/bin/wazuh-db
+             ├─76439 /var/ossec/bin/wazuh-execd
+             ├─76469 /var/ossec/bin/wazuh-analysisd
+             ├─76489 /var/ossec/bin/wazuh-syscheckd
+             ├─76513 /var/ossec/bin/wazuh-remoted
+             ├─76584 /var/ossec/bin/wazuh-logcollector
+             ├─76600 /var/ossec/framework/python/bin/python3 /var/o>
+             ├─76603 /var/ossec/framework/python/bin/python3 /var/o>
+             ├─76616 /var/ossec/bin/wazuh-monitord
+             └─76647 /var/ossec/bin/wazuh-modulesd
+
+Sep 03 17:09:24 kali env[76017]: Started wazuh-db...
+Sep 03 17:09:25 kali env[76017]: Started wazuh-execd...
+Sep 03 17:09:26 kali env[76017]: Started wazuh-analysisd...
+Sep 03 17:09:27 kali env[76017]: Started wazuh-syscheckd...
+Sep 03 17:09:28 kali env[76017]: Started wazuh-remoted...
+Sep 03 17:09:29 kali env[76017]: Started wazuh-logcollector...
+Sep 03 17:09:30 kali env[76017]: Started wazuh-monitord...
+Sep 03 17:09:32 kali env[76017]: Started wazuh-modulesd...
+Sep 03 17:09:34 kali env[76017]: Completed.
+Sep 03 17:09:34 kali systemd[1]: Started wazuh-manager.service - Wa>
+
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# systemctl status filebeat.service     
+● filebeat.service - Filebeat sends log files to Logstash or direct>
+     Loaded: loaded (/lib/systemd/system/filebeat.service; enabled;>
+     Active: active (running) since Sun 2023-09-03 17:26:52 EDT; 25>
+       Docs: https://www.elastic.co/products/beats/filebeat
+   Main PID: 85627 (filebeat)
+      Tasks: 8 (limit: 2265)
+     Memory: 11.8M
+        CPU: 974ms
+     CGroup: /system.slice/filebeat.service
+             └─85627 /usr/share/filebeat/bin/filebeat --environment>
+
+Sep 03 17:26:52 kali systemd[1]: Started filebeat.service - Filebea>
+
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# systemctl status wazuh-indexer        
+● wazuh-indexer.service - Wazuh-indexer
+     Loaded: loaded (/lib/systemd/system/wazuh-indexer.service; ena>
+     Active: active (running) since Sun 2023-09-03 16:59:03 EDT; 53>
+       Docs: https://documentation.wazuh.com
+   Main PID: 27206 (java)
+      Tasks: 71 (limit: 2265)
+     Memory: 923.5M
+        CPU: 4min 21.678s
+     CGroup: /system.slice/wazuh-indexer.service
+             └─27206 /usr/share/wazuh-indexer/jdk/bin/java -Xshare:>
+
+Sep 03 16:58:09 kali systemd[1]: Starting wazuh-indexer.service - W>
+Sep 03 16:58:16 kali systemd-entrypoint[27206]: WARNING: A terminal>
+Sep 03 16:58:16 kali systemd-entrypoint[27206]: WARNING: System::se>
+Sep 03 16:58:16 kali systemd-entrypoint[27206]: WARNING: Please con>
+Sep 03 16:58:16 kali systemd-entrypoint[27206]: WARNING: System::se>
+Sep 03 16:58:22 kali systemd-entrypoint[27206]: WARNING: A terminal>
+Sep 03 16:58:22 kali systemd-entrypoint[27206]: WARNING: System::se>
+Sep 03 16:58:22 kali systemd-entrypoint[27206]: WARNING: Please con>
+Sep 03 16:58:22 kali systemd-entrypoint[27206]: WARNING: System::se>
+Sep 03 16:59:03 kali systemd[1]: Started wazuh-indexer.service - Wa>
+lines 1-21/21 (END)
+                                                                    
+┌──(root㉿kali)-[/home/kali]
+└─# cd /etc/wazuh-indexer
+                                                                    
+┌──(root㉿kali)-[/etc/wazuh-indexer]
+└─# ls
+certs                     opensearch-notifications-core
+jvm.options               opensearch-observability
+jvm.options.d             opensearch-performance-analyzer
+log4j2.properties         opensearch-reports-scheduler
+opensearch.keystore       opensearch-security
+opensearch-notifications  opensearch.yml
+                                                                    
+┌──(root㉿kali)-[/etc/wazuh-indexer]
+└─# nano opensearch.yml                                        
+                                                                    
+┌──(root㉿kali)-[/etc/wazuh-indexer]
+└─# curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/4.5/extensions/elasticsearch/7.x/wazuh-template.json
+chmod go+r /etc/filebeat/wazuh-template.json
+                                                                    
+┌──(root㉿kali)-[/etc/wazuh-indexer]
+└─# systemctl status filebeat.service
+● filebeat.service - Filebeat sends log files to Logstash or direct>
+     Loaded: loaded (/lib/systemd/system/filebeat.service; enabled;>
+     Active: active (running) since Sun 2023-09-03 17:26:52 EDT; 31>
+       Docs: https://www.elastic.co/products/beats/filebeat
+   Main PID: 85627 (filebeat)
+      Tasks: 8 (limit: 2265)
+     Memory: 11.9M
+        CPU: 1.211s
+     CGroup: /system.slice/filebeat.service
+             └─85627 /usr/share/filebeat/bin/filebeat --environment>
+
+Sep 03 17:26:52 kali systemd[1]: Started filebeat.service - Filebea>
+
+                                                                    
+┌──(root㉿kali)-[/etc/wazuh-indexer]
+└─# filebeat test output
+elasticsearch: https://192.168.2.136:9200...
+  parse url... OK
+  connection...
+    parse host... OK
+    dns lookup... OK                                                
+    addresses: 192.168.2.136                                        
+    dial up... OK                                              
+    security: server's certificate chain verification is enabled
+    handshake... OK
+    TLS version: TLSv1.3                                            
+    dial up... OK
+  talk to server... OK                                              
+  version: 7.10.2        
+
+# Install necessary packages
+apt-get install gnupg apt-transport-https
+
+# Update package lists
+apt-get update
+
+# Install Wazuh Dashboard
+apt-get -y install wazuh-dashboard
+
+# Configure Wazuh Dashboard
+nano /etc/wazuh-dashboard/opensearch_dashboards.yml
+NODE_NAME=dashboard
+
+# Set up certificates
+mkdir /etc/wazuh-dashboard/certs
+tar -xf ./wazuh-certificates.tar -C /etc/wazuh-dashboard/certs/ ./$NODE_NAME.pem ./$NODE_NAME-key.pem ./root-ca.pem
+mv -n /etc/wazuh-dashboard/certs/$NODE_NAME.pem /etc/wazuh-dashboard/certs/dashboard.pem
+mv -n /etc/wazuh-dashboard/certs/$NODE_NAME-key.pem /etc/wazuh-dashboard/certs/dashboard-key.pem
+chmod 500 /etc/wazuh-dashboard/certs
+chmod 400 /etc/wazuh-dashboard/certs/*
+chown -R wazuh-dashboard:wazuh-dashboard /etc/wazuh-dashboard/certs
+
+# Reload systemd and start Wazuh Dashboard
+systemctl daemon-reload
+systemctl enable wazuh-dashboard
+systemctl start wazuh-dashboard
+
+# Check the status of Wazuh Dashboard
+systemctl status wazuh-dashboard.service
+
+# Edit Wazuh configuration
+nano /usr/share/wazuh-dashboard/data/wazuh/config/wazuh.yml
+
+# Check the status of Wazuh Dashboard service again
+systemctl status wazuh-dashboard.service
+
+# Check the status of Wazuh Manager service
+systemctl status wazuh-manager.service
+
+# Check the status of Filebeat service
+systemctl status filebeat.service
+
+# Check the status of Wazuh Indexer service
+systemctl status wazuh-indexer
+
+# Edit OpenSearch configuration
+nano /etc/wazuh-indexer/opensearch.yml
+
+# Download Wazuh Filebeat template
+curl -so /etc/filebeat/wazuh-template.json https://raw.githubusercontent.com/wazuh/wazuh/4.5/extensions/elasticsearch/7.x/wazuh-template.json
+chmod go+r /etc/filebeat/wazuh-template.json
+
+# Test Filebeat output
+filebeat test output
+  
