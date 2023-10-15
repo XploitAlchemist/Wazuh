@@ -1,0 +1,47 @@
+
+## Wazuh Deployment on Ubuntu (Version Older Than 12)
+
+This guide covers the basic deployment of Wazuh on Ubuntu versions older than 12. It's important to note that you should avoid upgrading packages after installing Wazuh, as it may disrupt the deployment. Additionally, make sure to allocate a minimum of 8GB of RAM to the Wazuh server.
+
+**Note:**
+This deployment guide is specifically for Ubuntu versions older than 12. If you're using a different Ubuntu version or another operating system, you may need to refer to alternative deployment guides.
+
+### Prerequisites
+
+Before you begin, ensure you have the following:
+
+- An Ubuntu VM running a version older than 12.
+- At least 8GB of RAM allocated to the VM.
+- Administrative access to the VM.
+- Basic knowledge of Linux command-line.
+
+### Installation Steps
+
+Follow these steps to deploy Wazuh on your Ubuntu VM:
+
+# Step 1: Update Package Lists
+sudo apt-get update
+
+# Step 2: Install Wazuh (Replace with the actual installation command for your specific Ubuntu version)
+sudo apt-get install wazuh
+Configuration: Configure Wazuh as per your requirements.
+
+Do Not Upgrade Packages: Do not upgrade packages after installing Wazuh, as it may interfere with the deployment.
+
+Warnings
+Package Upgrades: Avoid upgrading packages after installing Wazuh, as it can lead to issues with your deployment.
+Additional Notes
+This guide is designed for Ubuntu versions older than 12. If you are using a different version, refer to the appropriate deployment guide.
+Remember that Kali Linux does not officially support running a Wazuh server.
+
+Support
+If you encounter any issues or have questions, feel free to open an issue or seek help from the Wazuh community.
+
+Happy monitoring with Wazuh!
+
+
+You can copy and paste this entire code into your GitHub README file, replacing `link_to_your_issue_tracker` and `link_to_wazuh_community` with the actual links to your issue tracker and the Wazuh community, respectively. Make any further modifications or styling as needed.
+
+
+
+steps : https://documentation.wazuh.com/current/installation-guide/wazuh-server/index.html
